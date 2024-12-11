@@ -13,16 +13,17 @@ void setup() {
   DigiKeyboard.update();
   DigiKeyboard.delay(1000);
   
-  // Open Browser with Windows Key + B
+  // Goes to Home
+  DigiKeyboard.sendKeyStroke(KEY_ENTER, MOD_GUI_LEFT); // Home button
+  DigiKeyboard.delay(1000);
+
+  // Open Browser
   DigiKeyboard.sendKeyStroke(KEY_B, MOD_GUI_LEFT); // Windows Key + B
-  DigiKeyboard.delay(1000);
-  
-  // Insert a space after the Windows Key + B command
-  DigiKeyboard.sendKeyStroke(KEY_SPACE);
-  DigiKeyboard.delay(1000);
+  DigiKeyboard.delay(3000);
   
   // Search in Browser
   DigiKeyboard.sendKeyStroke(KEY_L, MOD_CONTROL_LEFT); // Focus the address bar (Control + L)
+  DigiKeyboard.delay(1000);
   
   // Print GitHub URL
   DigiKeyboard.print("https://github.com/dileep-kumar-koppula?tab=repositories\n");
