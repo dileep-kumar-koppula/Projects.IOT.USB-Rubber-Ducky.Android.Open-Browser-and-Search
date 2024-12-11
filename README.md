@@ -12,14 +12,6 @@ void setup() {
   // Initialize DigiKeyboard
   DigiKeyboard.update();
   DigiKeyboard.delay(1000);
-
-  // Send key stroke to open application
-  DigiKeyboard.sendKeyStroke(43); // Simulates pressing the '+' key
-  DigiKeyboard.delay(1000);
-
-  // Press Enter
-  DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(1000);
   
   // Open Browser with Windows Key + B
   DigiKeyboard.sendKeyStroke(KEY_B, MOD_GUI_LEFT); // Windows Key + B
